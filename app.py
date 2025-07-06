@@ -1,14 +1,21 @@
 from flask import Flask, request, jsonify
 from flask_cors import CORS
 import random
+
 app = Flask(__name__)
 CORS(app)  # ✅ Enable CORS to allow frontend requests
+
+@app.route("/", methods=["GET"])
+def home():
+    return "🎉 Rock Paper Scissors backend is running!"
+
 @app.route("/play", methods=["POST"])
 def play():
     data = request.get_json()
     user_choice = data.get("choice")
     choices = ["rock", "paper", "scissors"]
     computer_choice = random.choice(choices)
+
     # Determine result
     if user_choice == computer_choice:
         result = "It's a tie!"
@@ -18,6 +25,7 @@ def play():
         result = "You Win!"
     else:
         result = "You Lose!"
+
     return jsonify({
         "user_choice": user_choice,
         "computer_choice": computer_choice,

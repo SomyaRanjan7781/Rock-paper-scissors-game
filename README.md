@@ -1,18 +1,48 @@
-Title: "Rock Paper Scissors Game"
-emoji: ✊✋✌️
-colorFrom: green
-colorTo: blue
-sdk: static
-app_file: index.html
-pinned: false
+✊✋✌️ Rock Paper Scissors Game
 
+🚀 Live Demo
+🔗 Play Now: https://huggingface.co/spaces/somya-27-04-03/Rock-paper-scissors-frontend
 
-# ✊ Rock Paper Scissors Game:
-A fun browser-based Rock Paper Scissors game built using **HTML, CSS, and JavaScript**.
+🎮 Project Overview
+This is a full-stack Rock Paper Scissors game with:
 
-## 🚀 How to Play:
-- Click Rock, Paper, or Scissors buttons.
-- Play against the computer and track your scores.
-- Designed for quick deployment on Hugging Face Spaces.
+✅ A lively frontend built using HTML, CSS, JavaScript
+✅ Backend logic and API built using Python Flask deployed on Render
+✅ Hosted frontend on Hugging Face Spaces
 
-> Created by Somya Ranjan Mahapatra.
+⚙️ Features
+🎨 Attractive UI with blurred background images
+
+🖱️ Interactive buttons for each choice
+
+📊 Score tracking (player vs computer)
+
+🤖 Random computer choice generated on each play
+
+🔊 Sound effects for win, lose, and tie
+
+🌙 Theme toggle ready for future enhancements
+
+🔗 Backend API using Flask with deployed REST endpoint
+
+🛠️ Tech Stack
+Frontend: HTML, CSS, JavaScript
+
+Backend: Python Flask
+
+Deployment: Render (backend), Hugging Face Spaces (frontend)
+
+Version Control: Git & GitHub
+
+🤝 Contributing
+Feel free to fork, raise issues, and submit pull requests to improve the UI, add multiplayer, or integrate advanced ML logic for dynamic gameplay.
+
+👤 Author
+Somya Ranjan Mahapatra
+
+GitHub
+
+Hugging Face
+
+⭐ If you like this project, give it a star on GitHub to support my open-source work!
+

@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Rock Paper Scissors Game</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body class="dark-theme">
+  <div class="game-container">
+    <button id="toggleTheme" style="margin-bottom:10px;">Toggle Theme</button>
+    <h1>Rock Paper Scissors</h1>
+    <div>✊ ✋ ✌️</div>
+    <div id="score">Player: 0 | Computer: 0</div>
+    <div class="choices">
+      <button class="choice-button" data-choice="rock">✊ Rock</button>
+      <button class="choice-button" data-choice="paper">✋ Paper</button>
+      <button class="choice-button" data-choice="scissors">✌️ Scissors</button>
+    </div>
+    <div id="choicesDisplay">
+      <div>You chose: <span id="playerChoice">-</span></div>
+      <div class="emoji" id="playerEmoji"></div>
+      <div>Computer chose: <span id="computerChoice">-</span></div>
+      <div class="emoji" id="computerEmoji"></div>
+    </div>
+    <div id="result"></div>
+  </div>
+
+  <!-- 🎵 Sound Effects -->
+  <audio id="winSound" src="https://www.soundjay.com/button/beep-07.mp3"></audio>
+  <audio id="loseSound" src="https://www.soundjay.com/button/beep-10.mp3"></audio>
+  <audio id="tieSound" src="https://www.soundjay.com/button/beep-05.mp3"></audio>
+
+  <script src="script.js"></script>
+</body>
+</html>

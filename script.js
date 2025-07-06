@@ -31,7 +31,7 @@ document.addEventListener("DOMContentLoaded", () => {
       const choice = button.getAttribute("data-choice");
 
       // ✅ Use your Render backend URL below
-      fetch("https://rock-paper-scissors-game-yj93.onrender.com", {
+      fetch("https://rock-paper-scissors-game-yj93.onrender.com/play", {
         method: "POST",
         headers: { "Content-Type": "application/json" },
         body: JSON.stringify({ choice: choice })

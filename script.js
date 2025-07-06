@@ -10,11 +10,14 @@ document.addEventListener("DOMContentLoaded", () => {
   let playerScore = 0;
   let computerScore = 0;
 
+  // 🌙 Theme toggle (if you have toggleTheme button in HTML)
   const toggleButton = document.getElementById("toggleTheme");
-  toggleButton.addEventListener("click", () => {
-    document.body.classList.toggle("dark-theme");
-    document.body.classList.toggle("light-theme");
-  });
+  if (toggleButton) {
+    toggleButton.addEventListener("click", () => {
+      document.body.classList.toggle("dark-theme");
+      document.body.classList.toggle("light-theme");
+    });
+  }
 
   function getEmoji(choice) {
     if (choice === 'rock') return '✊';
@@ -27,7 +30,8 @@ document.addEventListener("DOMContentLoaded", () => {
     button.addEventListener("click", () => {
       const choice = button.getAttribute("data-choice");
 
-      fetch("http://127.0.0.1:7860/play", {
+      // ✅ Use your Render backend URL below
+      fetch("https://rock-paper-scissors-game-yj93.onrender.com", {
         method: "POST",
         headers: { "Content-Type": "application/json" },
         body: JSON.stringify({ choice: choice })

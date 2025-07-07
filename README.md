@@ -1,7 +1,7 @@
 ✊✋✌️ Rock Paper Scissors Game
 
 🚀 Live Demo
-🔗 Play Now: https://huggingface.co/spaces/somya-27-04-03/Rock-paper-scissors-frontend
+🔗 Play Now: https://huggingface.co/spaces/somya-27-04-03/Rock-paper-scissors-fullstack-game
 
 🎮 Project Overview
 This is a full-stack Rock Paper Scissors game with:
@@ -19,19 +19,13 @@ This is a full-stack Rock Paper Scissors game with:
 
 🤖 Random computer choice generated on each play
 
-🔊 Sound effects for win, lose, and tie
-
-🌙 Theme toggle ready for future enhancements
-
-🔗 Backend API using Flask with deployed REST endpoint
+🔗 Backend API using Gradio with deployed REST endpoint
 
 🛠️ Tech Stack
 Frontend: HTML, CSS, JavaScript
 
-Backend: Python Flask
-
-Deployment: Render (backend), Hugging Face Spaces (frontend)
-
+Backend: Python Gradio
+Deployment: Hugging Face Spaces (frontend/backend)
 Version Control: Git & GitHub
 
 🤝 Contributing
@@ -41,8 +35,6 @@ Feel free to fork, raise issues, and submit pull requests to improve the UI, add
 Somya Ranjan Mahapatra
 
 GitHub
-
 Hugging Face
-
 ⭐ If you like this project, give it a star on GitHub to support my open-source work!
 
